@@ -1,0 +1,50 @@
+/* WAP to store two student record information in a student structure
+   database using structures */
+   #include<stdio.h>
+   #include<conio.h>
+
+   struct  student
+   {
+      int    sno;
+      char   name[20];
+      int    total;
+      float  avg;
+    }s1,s2;
+int main()
+ {
+//  struct   student s1,s2;    /* Structure varibael declaration */
+   clrscr();
+ printf("\n Store Two students records in Student Database :\n");
+ printf("\n Enter Student 1 Record :\n");
+ printf("\n Student No : ");
+ scanf("%d",&s1.sno);
+ printf("\n Student Name : ");
+ scanf("%s",&s1.name);
+ printf("\n Total marks : ");
+ scanf("%d",&s1.total);
+ printf("\n Average : ");
+ scanf("%f",&s1.avg);
+ printf("\n Enter Student 2 Record :\n");
+ printf("\n Student No : ");
+ scanf("%d",&s2.sno);
+ printf("\n Student Name : ");
+ scanf("%s",&s2.name);
+ printf("\n Total marks : ");
+ scanf("%d",&s2.total);
+ printf("\n Average : ");
+ scanf("%f",&s2.avg);
+ printf("\n **** Student Database  Records ****\n");
+ printf("\n Student 1 Record :\n");
+ printf("\n S.no         : %d",s1.sno);
+ printf("\n Student Name : %s",s1.name);
+ printf("\n Total        : %d",s1.total);
+ printf("\n Average      : %f",s1.avg);
+ printf("\n --------------------------------");
+ printf("\n Student 2 Record :\n");
+ printf("\n S.No         : %d",s2.sno);
+ printf("\n Student Name : %s",s2.name);
+ printf("\n Total        : %d",s2.total);
+ printf("\n Averge       : %f",s2.avg);
+// getch();
+return 0; 
+}
