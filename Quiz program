@@ -1,0 +1,36 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+int age,x,op,sum=0;
+string name;
+string num;
+cout<<"========================================="<<endl;
+cout<<"\tGENERAL KNOWLEDGE QUIZ PROGRAM"<<endl;
+cout<<"========================================="<<endl;
+cout<<"\nEnter your name :- ";
+cin>>name;
+cout<<"\n Enter your age :- ";
+cin>>age;
+cout<<"\nMobile number :- ";
+cin>>num;
+again :
+cout<<"\nHere the QUIZ starts "<<endl;
+cout<<"\nLargest mamal in the world ?";
+cout<<"\n1.Blue whale \t 2.Elephant\n3.Achyuth\t4.Nani reddy"<<endl;
+cin>>op;
+if(op==1)
+sum+=4;
+else 
+sum+=-1;
+cout<<name<<endl<<age<<endl<<num<<endl;
+cout<<"your score is "<<sum<<"\nthanks for playing";
+cout<<"\nif want to play again yes/no (1/0) : ";
+cin>>x;
+if(x==1){
+goto again;}
+else {
+cout<<"Quiz ended "<<endl;}
+    return 0;
+}
