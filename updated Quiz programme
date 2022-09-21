@@ -1,0 +1,121 @@
+#include <iostream>
+using namespace std;
+
+ 
+int
+main ()
+{
+  
+int age, sum = 0;
+  
+char op, x;
+  
+string name;
+  
+string num;
+  
+cout << "=========================================" << endl;
+  
+cout << "\tGENERAL KNOWLEDGE QUIZ PROGRAM" << endl;
+  
+cout << "=========================================" << endl;
+  
+cout << "\nEnter your name :- ";
+  
+cin >> name;
+  
+cout << "\n Enter your age :- ";
+  
+cin >> age;
+  
+cout << "\nMobile number :- ";
+  
+cin >> num;
+
+again:
+sum = 0;
+  
+cout << "\nHere the QUIZ starts " << endl;
+  
+cout << "\nLargest mamal in the world ?";
+  
+cout <<
+    "\nA.Blue whale \t B.Elephant\nC.hercules\tD.giraffe \n Enter option like(A/B/C/D)"
+    << endl;
+  
+cin >> op;
+  
+if (op == 'a')
+    
+sum += 4;
+  
+  else
+    
+sum += -1;
+  
+cout << "\nInventor of computer ?\n Enter option like(A/B/C/D)";
+  
+cout <<
+    "\nA.thomas elva edision \t B.charles babbage \nC.dennis ritchie\tD.jagan mohan reddy"
+    << endl;
+  
+cin >> op;
+  
+if (op == 'b')
+    
+sum += 4;
+  
+  else
+    
+sum += -1;
+
+cout << "\nwhich one of the following is the seven wonders of the world ?\n Enter option like(A/B/C/D)";
+  
+cout <<
+    "\nA.statue of unity \t B.the colosseum \nC.grand canyon \t D.statue of liberty"
+    << endl;
+  
+cin >> op;
+  
+if (op == 'b')
+    
+sum += 4;
+  
+  else
+    
+sum += -1;
+  
+cout << "Mr." << name << endl << "of age " << age << endl << "your number "
+    << num << endl;
+  
+if (sum >= 1)
+    
+cout << "your score is " << sum <<
+      "\n great performance \nthanks for playing\n";
+  
+  else
+    
+cout << "your score is " << sum <<
+      "\n not bad try again \n better luck nxt time \n";
+      cout<<"====================================="<<endl;
+      cout<<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"<<endl;
+  
+cout << "\nif want to play again yes/no (y/n) : ";
+  
+cin >> x;
+  
+if (x == 'y' || x == 'Y')
+    {
+      
+goto again;
+    }
+  
+  else
+    {
+      
+cout << "Quiz ended " << endl;
+    }
+  
+return 0;
+
+}
