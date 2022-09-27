@@ -1,0 +1,50 @@
+Hi everyone 
+Owner : mohana sreenath kodidela 
+used langauge : C++ 
+used IDE      : code blocks
+Body mass index (BMI) is an estimate of body fat based on height and weight.
+It doesn’t measure body fat directly, but instead uses an equation to make an approximation.
+BMI can help determine whether a person is at an unhealthy or healthy weight.
+
+
+Code :
+
+/*This is a Body Masss Index Calculator Program*/
+#include<iostream>
+using namespace std;
+class Mass{
+    public :
+    float height,weight,bmi;
+    string name,gender;
+};
+int main()
+{ Mass m1;
+cout<<"Enter your name :";
+cin>>m1.name;
+cout<<"Enter your gender : ";
+cin>>m1.gender;
+cout<<"Enter your height in cms : ";
+cin>>m1.height;
+m1.height=m1.height/100;
+cout<<"Enter your weight in Kg's : ";
+cin>>m1.weight;
+float y;
+y=m1.height*m1.height;
+m1.bmi=m1.weight/y;
+cout<<"--------------------------------"<<endl;;
+cout<<"Name  \t: "<<m1.name<<endl;
+cout<<"Gender\t: "<<m1.gender<<endl;
+cout<<"Height\t: "<<m1.height<<"m"<<endl;
+cout<<"Weight\t: "<<m1.weight<<"Kgs"<<endl;
+cout<<"BMI   \t  "<<m1.bmi<<endl;
+if(m1.bmi<18.5)
+    cout<<"Result : under weight need to consume nutritious food"<<endl;
+if(m1.bmi>=18.5&&m1.bmi<=24.9)
+    cout<<"Result : Normal weight need to consume nutritious food"<<endl;
+if(m1.bmi>=25&&m1.bmi<30)
+    cout<<"Result : Over weight need to workout on your body"<<endl;
+if(m1.bmi>=30)
+    cout<<"Result : obesity your are in danger decrease weight is compulsory or it leads you into danger"<<endl;
+//cout<<"Result : Overweight"<<endl;
+    return 0;
+}
